@@ -4,7 +4,8 @@
   "description": "use to track sun and create shadows ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -S -C root_ca.cert -o"
   },
   "author": "",
   "license": "ISC",
