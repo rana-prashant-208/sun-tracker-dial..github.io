@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -S -C root_ca.cert -o"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "three": "^0.120.1"
-  }
+  },
+  "postinstall" : "gulp build"
+  
 }

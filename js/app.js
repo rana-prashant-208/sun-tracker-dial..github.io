@@ -5,7 +5,7 @@ var theta = -45;
 var delta = 45;
 var lat;
 var lng;
-var hour = 12
+var hour = 16
 var minute = 36;
 var xOffSet = -1;
 var radius = window.innerWidth / 10;
@@ -86,7 +86,10 @@ camera.up = new THREE.Vector3(0, 0, 1);
 camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 function animate() {
-	date = new Date(2020, 9, 28, hour, minute);
+	// date = new Date(2020, 9, 28, hour, minute);
+	date = new Date();
+	hour=date.getHours();
+	minute=date.getMinutes();
 	var position = getCurrentPosition();
 	if (animation == true) {
 		minute += 1;
